@@ -263,6 +263,70 @@
 </package>
 </packages>
 </library>
+<library name="thermo">
+<packages>
+<package name="H11AA4M">
+<pad name="IN1" x="-2.54" y="-3.81" drill="0.6" diameter="1.27" shape="square"/>
+<pad name="IN2" x="0" y="-3.81" drill="0.6" diameter="1.27"/>
+<pad name="NC" x="2.54" y="-3.81" drill="0.6" diameter="1.27"/>
+<pad name="E" x="2.54" y="3.81" drill="0.6" diameter="1.27"/>
+<pad name="C" x="0" y="3.81" drill="0.6" diameter="1.27"/>
+<pad name="B" x="-2.54" y="3.81" drill="0.6" diameter="1.27"/>
+<wire x1="-4.25" y1="2.82" x2="4.28" y2="2.82" width="0.127" layer="21"/>
+<wire x1="4.28" y1="2.82" x2="4.28" y2="2.79" width="0.127" layer="21"/>
+<wire x1="4.28" y1="2.79" x2="4.28" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="4.28" y1="-2.85" x2="3.46" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="3.46" y1="-2.85" x2="-4.25" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="-2.85" x2="-4.25" y2="2.82" width="0.127" layer="21"/>
+<text x="-3.37" y="-1.82" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="MOC3052M">
+<pad name="IN1" x="-2.54" y="-3.81" drill="0.6" diameter="1.27" shape="square"/>
+<pad name="IN2" x="0" y="-3.81" drill="0.6" diameter="1.27"/>
+<pad name="NC@1" x="2.54" y="-3.81" drill="0.6" diameter="1.27"/>
+<pad name="MAIN@2" x="2.54" y="3.81" drill="0.6" diameter="1.27"/>
+<pad name="NC@2" x="0" y="3.81" drill="0.6" diameter="1.27"/>
+<pad name="MAIN@1" x="-2.54" y="3.81" drill="0.6" diameter="1.27"/>
+<wire x1="-4.25" y1="2.82" x2="4.28" y2="2.82" width="0.127" layer="21"/>
+<wire x1="4.28" y1="2.82" x2="4.28" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="4.28" y1="-2.85" x2="-4.25" y2="-2.85" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="-2.85" x2="-4.25" y2="2.82" width="0.127" layer="21"/>
+<text x="-3.37" y="-1.82" size="1.27" layer="21">&gt;NAME</text>
+</package>
+</packages>
+</library>
+<library name="ref_lib">
+<packages>
+<package name="YAG5755-ND">
+<wire x1="-10" y1="0" x2="-10" y2="3" width="0.127" layer="21"/>
+<wire x1="-10" y1="3" x2="-10" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-10" y1="3.2" x2="-9.9" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-9.9" y1="3.2" x2="10" y2="3.2" width="0.127" layer="21"/>
+<wire x1="10" y1="3.2" x2="10" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="10" y1="-3.2" x2="-10" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="-10" y1="-3.2" x2="-10" y2="0" width="0.127" layer="21"/>
+<text x="-3" y="4" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3" y="-5" size="1.27" layer="21">&gt;VALUE</text>
+<pad name="P$1" x="-17" y="0" drill="1" diameter="1.9304"/>
+<pad name="P$2" x="17" y="0" drill="1" diameter="1.9304"/>
+</package>
+<package name="QG015L5TP">
+<pad name="P$1" x="2.54" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="P$2" x="0" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="P$3" x="-2.54" y="0" drill="0.8" diameter="1.4224"/>
+</package>
+<package name="CR-25">
+<wire x1="-3.15" y1="1.2" x2="-3.15" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="-1.2" x2="3.15" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="3.15" y1="-1.2" x2="3.15" y2="1.2" width="0.127" layer="21"/>
+<wire x1="3.15" y1="1.2" x2="-3.15" y2="1.2" width="0.127" layer="21"/>
+<text x="-2.7" y="0.2" size="0.6096" layer="21">&gt;VALUE</text>
+<text x="-2.7" y="-0.8" size="0.6096" layer="21">&gt;NAME</text>
+<pad name="P$1" x="-6" y="0" drill="0.6"/>
+<pad name="P$2" x="6" y="0" drill="0.6"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -456,13 +520,74 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="A1" library="Arduino" package="NANO_EVERY_SOCKET" value="NANO_EVERY" x="20.32" y="-11.43" smashed="yes">
-<attribute name="NAME" x="13.97" y="-12.7" size="2.54" layer="21"/>
+<element name="A1" library="Arduino" package="NANO_EVERY_SOCKET" value="NANO_EVERY" x="26.67" y="13.97" smashed="yes">
+<attribute name="NAME" x="20.32" y="12.7" size="2.54" layer="21"/>
+</element>
+<element name="U1" library="thermo" package="H11AA4M" value="H11AA4M" x="91.44" y="8.89" smashed="yes">
+<attribute name="NAME" x="88.07" y="7.07" size="1.27" layer="21"/>
+</element>
+<element name="U2" library="thermo" package="MOC3052M" value="MOC3052M" x="71.12" y="10.16" smashed="yes">
+<attribute name="NAME" x="67.75" y="8.34" size="1.27" layer="21"/>
+</element>
+<element name="R1" library="ref_lib" package="YAG5755-ND" value="15K" x="67.31" y="44.45" smashed="yes">
+<attribute name="NAME" x="64.31" y="48.45" size="1.27" layer="21"/>
+<attribute name="VALUE" x="64.31" y="39.45" size="1.27" layer="21"/>
+</element>
+<element name="R2" library="ref_lib" package="YAG5755-ND" value="15K" x="90.17" y="33.02" smashed="yes">
+<attribute name="NAME" x="87.17" y="37.02" size="1.27" layer="21"/>
+<attribute name="VALUE" x="87.17" y="28.02" size="1.27" layer="21"/>
+</element>
+<element name="U$1" library="ref_lib" package="QG015L5TP" value="QG015L5TP" x="-13.97" y="-22.86" smashed="yes"/>
+<element name="R3" library="ref_lib" package="CR-25" value="1.5K" x="17.78" y="41.91" smashed="yes">
+<attribute name="NAME" x="15.08" y="41.11" size="0.6096" layer="21"/>
+<attribute name="VALUE" x="15.08" y="42.11" size="0.6096" layer="21"/>
+</element>
+<element name="R4" library="ref_lib" package="CR-25" value="220" x="-25.4" y="-6.35" smashed="yes">
+<attribute name="NAME" x="-28.1" y="-7.15" size="0.6096" layer="21"/>
+<attribute name="VALUE" x="-28.1" y="-6.15" size="0.6096" layer="21"/>
 </element>
 </elements>
 <signals>
 <signal name="VIN">
 <contactref element="A1" pad="VIN"/>
+</signal>
+<signal name="GND">
+<contactref element="U2" pad="IN2"/>
+<contactref element="U1" pad="E"/>
+<wire x1="93.98" y1="12.7" x2="71.12" y2="6.35" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<contactref element="R1" pad="P$1"/>
+<contactref element="U1" pad="IN2"/>
+<wire x1="91.44" y1="5.08" x2="50.31" y2="44.45" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="R2" pad="P$1"/>
+<contactref element="U1" pad="IN1"/>
+<wire x1="88.9" y1="5.08" x2="73.17" y2="33.02" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="U$1" pad="P$3"/>
+<contactref element="R2" pad="P$2"/>
+<wire x1="107.17" y1="33.02" x2="-16.51" y2="-22.86" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="R1" pad="P$2"/>
+</signal>
+<signal name="N$5">
+<contactref element="U2" pad="MAIN@2"/>
+<contactref element="R3" pad="P$1"/>
+<wire x1="73.66" y1="13.97" x2="11.78" y2="41.91" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="R3" pad="P$2"/>
+<contactref element="U$1" pad="P$2"/>
+<wire x1="23.78" y1="41.91" x2="-13.97" y2="-22.86" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="R4" pad="P$2"/>
+<contactref element="U2" pad="IN1"/>
+<wire x1="68.58" y1="6.35" x2="-19.4" y2="-6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
