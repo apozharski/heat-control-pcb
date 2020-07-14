@@ -1,5 +1,8 @@
 # Ignore list for Eagle, a PCB layout tool
 
+# CAM job outputs
+CAM/
+
 # Backup files
 *.s\#?
 *.b\#?
