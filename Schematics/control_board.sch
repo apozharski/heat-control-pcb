@@ -387,9 +387,9 @@
 <devices>
 <device name="" package="QG015L5TP">
 <connects>
-<connect gate="G$1" pin="A1" pad="P$1"/>
-<connect gate="G$1" pin="A2" pad="P$3"/>
-<connect gate="G$1" pin="G" pad="P$2"/>
+<connect gate="G$1" pin="A1" pad="P$3"/>
+<connect gate="G$1" pin="A2" pad="P$2"/>
+<connect gate="G$1" pin="G" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
